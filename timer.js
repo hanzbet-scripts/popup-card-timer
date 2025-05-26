@@ -3,7 +3,6 @@ let checkInterval = setInterval(() => {
 
   if (element) {
     clearInterval(checkInterval); // Para de verificar
-    alert("Elemento encontrado!");
 
     function timer() {
       try {
