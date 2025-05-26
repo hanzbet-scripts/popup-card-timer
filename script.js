@@ -18,6 +18,7 @@ document.head.appendChild(link);
 
 const script = document.createElement("script");
 
-script.src = "./timer.js";
+script.src =
+  "https://cdn.jsdelivr.net/gh/hanzbet-scripts/popup-card-timer@88120e25db32b47cf02b8391a02c69033737fdaf/timer.js";
 
 document.body.insertAdjacentElement("beforeend", script);
