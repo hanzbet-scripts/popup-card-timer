@@ -1,7 +1,9 @@
 let checkInterval = setInterval(() => {
   const element = document.getElementById("thosijulio-timer");
+  const buttonPlay = document.getElementById("button-play");
+  const buttonClose = document.getElementById("thosijulio-close");
 
-  if (element) {
+  if (element && buttonClose && buttonPlay) {
     clearInterval(checkInterval); // Para de verificar
 
     function timer() {
@@ -32,9 +34,6 @@ let checkInterval = setInterval(() => {
         updateTimer(); // atualiza imediatamente ao carregar
         const interval = setInterval(updateTimer, 1000);
 
-        const buttonPlay = document.getElementById("button-play");
-        const buttonClose = document.getElementById("thosijulio-close");
-
         buttonPlay?.addEventListener("click", (ev) => {
           ev.preventDefault();
           window.location.replace("https://google.com");
@@ -49,5 +48,9 @@ let checkInterval = setInterval(() => {
     }
 
     timer();
+  } else {
+    alert(element);
+    alert(buttonClose);
+    alert(buttonPlay);
   }
 }, 500);
