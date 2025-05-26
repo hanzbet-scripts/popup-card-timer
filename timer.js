@@ -10,7 +10,7 @@ function timer() {
       const diff = endOfDay - now;
 
       if (diff <= 0) {
-        element.innerHTML = "O tempo acabou.";
+        element?.innerHTML = "O tempo acabou.";
         clearInterval(interval);
         return;
       }
@@ -20,7 +20,7 @@ function timer() {
       const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
       alert(seconds);
-      element.innerHTML =
+      element?.inqnerHTML =
         `${hours.toString().padStart(2, "0")}h` +
         `${minutes.toString().padStart(2, "0")}m` +
         `${seconds.toString().padStart(2, "0")}s`;
