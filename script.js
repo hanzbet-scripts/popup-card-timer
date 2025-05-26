@@ -4,7 +4,7 @@
 // document.head.appendChild(meta);
 
 const buttonPlay = document.getElementById("button-play");
-buttonPlay.href = "https://hanz.bet.br/games/spribe/aviator";
+buttonPlay.href = "/games/spribe/aviator";
 
 const link = document.createElement("link");
 link.href =
