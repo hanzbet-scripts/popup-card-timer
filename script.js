@@ -3,6 +3,9 @@
 // meta.content = '"width=device-width, initial-scale=1.0"';
 // document.head.appendChild(meta);
 
+const buttonPlay = document.getElementById("button-play");
+buttonPlay.href = "https://hanz.bet.br/games/spribe/aviator";
+
 const link = document.createElement("link");
 link.href =
   "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap";
