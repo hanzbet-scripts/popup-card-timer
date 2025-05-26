@@ -1,5 +1,4 @@
 function timer() {
-  alert("aq");
   const element = document.getElementById("thosijulio-timer");
 
   function updateTimer() {
@@ -10,7 +9,7 @@ function timer() {
     const diff = endOfDay - now;
 
     if (diff <= 0) {
-      element.textContent = "O tempo acabou.";
+      element.innerHTML = "O tempo acabou.";
       clearInterval(interval);
       return;
     }
@@ -19,7 +18,7 @@ function timer() {
     const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-    element.textContent =
+    element.innerHTML =
       `${hours.toString().padStart(2, "0")}h` +
       `${minutes.toString().padStart(2, "0")}m` +
       `${seconds.toString().padStart(2, "0")}s`;
