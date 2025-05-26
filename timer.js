@@ -4,6 +4,7 @@ while (!elementExist) {
   setTimeout(() => {
     const element = document.getElementById('thosijulio-timer');
 
+    alert(element)
     if (element) {
       elementExist = true;
       function timer() {
