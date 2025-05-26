@@ -32,12 +32,12 @@ function timer() {
     const buttonPlay = document.getElementById("button-play");
     const buttonClose = document.getElementById("thosijulio-close");
 
-    buttonPlay.addEventListener("click", (ev) => {
+    buttonPlay?.addEventListener("click", (ev) => {
       ev.preventDefault();
       window.location.replace("https://google.com");
     });
 
-    buttonClose.addEventListener("click", () => {
+    buttonClose?.addEventListener("click", () => {
       window.location.replace("https://facebook.com");
     });
   } catch (error) {
