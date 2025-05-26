@@ -1,4 +1,5 @@
 function timer() {
+  alert("aq");
   const element = document.getElementById("thosijulio-timer");
 
   function updateTimer() {
