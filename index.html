@@ -1,0 +1,156 @@
+<div id="thosijulio-popup">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    #thosijulio-popup {
+      color: white;
+      font-family: "Poppins", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+    }
+
+    #thosijulio-close {
+      position: absolute;
+      right: 0px;
+      cursor: pointer;
+      font-size: 26px !important;
+      -webkit-user-select: none;
+      font-weight: 700;
+      padding: 10px;
+      top: 0px;
+      user-select: none;
+    }
+
+    #thosijulio-popup h1 {
+      color: rgba(0, 228, 56, 1);
+      font-size: 24px;
+      font-weight: 800;
+      margin: -10px;
+    }
+
+    #thosijulio-popup-content {
+      align-items: center;
+      background: linear-gradient(
+        180deg,
+        rgba(24, 24, 24, 1) 0%,
+        rgba(50, 50, 50, 1) 50%
+      );
+      border: 2px solid rgba(0, 228, 56, 1);
+      border-radius: 30px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      width: 350px;
+    }
+
+    #thosijulio-popup-banner {
+      margin-top: -20px;
+      width: 390px;
+    }
+
+    #thosijulio-popup-content-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: -40px;
+      align-items: center;
+    }
+
+    #thosijulio-popup p,
+    #thosijulio-popup h1,
+    #thosijulio-popup h2 {
+      margin: 0;
+    }
+
+    #thosijulio-popup p {
+      font-size: 14px;
+    }
+
+    #thosijulio-popup p.green {
+      color: rgba(65, 255, 73, 1);
+      font-weight: 600;
+    }
+
+    #thosijulio-popup a {
+      all: unset;
+      /* Remove TODOS os estilos padrão */
+      display: inline-block;
+      background: rgba(65, 255, 73, 1);
+      border-radius: 6px;
+      padding: 5px 20px;
+      /* Permite aplicar padding/margins se necessário */
+      cursor: pointer;
+      /* Mantém o cursor de link */
+      height: 100%;
+      width: 70%;
+      margin: 20px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #thosijulio-popup a p {
+      font-weight: 900;
+      font-size: 24px;
+      text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    #thosijulio-timer {
+      color: red;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 600px) {
+      #thosijulio-popup-content {
+        width: 90%;
+        height: auto;
+      }
+
+      #thosijulio-popup p {
+        font-size: 16px;
+      }
+
+      #thosijulio-popup h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+  <div id="thosijulio-popup-content">
+    <p
+      onclick="document.getElementById('thosijulio-popup').remove()"
+      id="thosijulio-close"
+    >
+      X
+    </p>
+    <img
+      src="/images/fortuneSnake.png"
+      id="thosijulio-popup-banner"
+      alt="banner"
+    />
+    <p style="margin: 10px 0 0">
+      Jogue o <strong>Fortune Snake</strong> agora mesmo e multiplique sua banca
+      hoje!
+    </p>
+    <p class="green">Hoje esse é o jogo certo para você!</p>
+    <a rel="noopener" href="https://hanzbet.com/"><p>JOGAR AGORA</p> </a>
+    <div id="thosijulio-popup-footer">
+      <p>Tempo para o RTP diminuir</p>
+      <p id="thosijulio-timer"></p>
+    </div>
+  </div>
+  <script src="/script.js"></script>
+</div>
