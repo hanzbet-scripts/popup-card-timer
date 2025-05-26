@@ -2,7 +2,7 @@ let elementExist = false;
 
 while (!elementExist) {
   setTimeout(() => {
-    const element = document.getElementById('thosijulio-timer');
+    const element = document?.getElementById('thosijulio-timer');
 
     alert(element)
     if (element) {
