@@ -4,7 +4,16 @@
 // document.head.appendChild(meta);
 
 const buttonPlay = document.getElementById("button-play");
-buttonPlay.href = "/games/spribe/aviator";
+const buttonClose = document.getElementById("thosijulio-close");
+
+buttonPlay.addEventListener("click", (ev) => {
+  ev.preventDefault();
+  window.location.replace("https://google.com");
+});
+
+buttonClose.addEventListener("click", () => {
+  window.location.replace("https://facebook.com");
+});
 
 const link = document.createElement("link");
 link.href =
