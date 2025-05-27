@@ -4,6 +4,7 @@ let checkInterval = setInterval(() => {
   const buttonClose = document.getElementById("thosijulio-close");
 
   if (element && buttonClose && buttonPlay) {
+    alert("aq 2");
     alert(element);
     alert(buttonClose);
     alert(buttonPlay);
