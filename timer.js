@@ -7,7 +7,7 @@ let checkInterval = setInterval(() => {
     alert("aq 2");
     alert(element);
     alert(buttonClose);
-    alert(buttonPlay);
+    alert(typeof buttonPlay);
     clearInterval(checkInterval); // Para de verificar
 
     function timer() {
