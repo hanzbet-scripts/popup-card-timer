@@ -42,9 +42,7 @@ let checkInterval = setInterval(() => {
         buttonClose.addEventListener("click", () => {
           window.location.replace("https://facebook.com");
         });
-      } catch (error) {
-        alert("erro: " + error.message);
-      }
+      } catch (error) {}
     }
 
     timer();
