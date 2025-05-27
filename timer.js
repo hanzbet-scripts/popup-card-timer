@@ -33,15 +33,6 @@ let checkInterval = setInterval(() => {
 
         updateTimer(); // atualiza imediatamente ao carregar
         const interval = setInterval(updateTimer, 1000);
-
-        buttonPlay.addEventListener("click", (ev) => {
-          ev.preventDefault();
-          window.location.href = "/games/spribe/aviator";
-        });
-
-        buttonClose.addEventListener("click", () => {
-          window.location.href = "/?x=y";
-        });
       } catch (error) {}
     }
 
