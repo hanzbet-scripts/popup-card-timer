@@ -3,11 +3,7 @@ let checkInterval = setInterval(() => {
   const buttonPlay = document.getElementById("button-play");
   const buttonClose = document.getElementById("thosijulio-close");
 
-  if (element && buttonClose && buttonPlay) {
-    alert("aq 2");
-    alert(element);
-    alert(buttonClose);
-    alert(typeof buttonPlay);
+  if (element !== null && buttonClose !== null && buttonPlay !== null) {
     clearInterval(checkInterval); // Para de verificar
 
     function timer() {
@@ -38,13 +34,13 @@ let checkInterval = setInterval(() => {
         updateTimer(); // atualiza imediatamente ao carregar
         const interval = setInterval(updateTimer, 1000);
 
-        buttonPlay?.addEventListener("click", (ev) => {
+        buttonPlay.addEventListener("click", (ev) => {
           ev.preventDefault();
-          window.location.assign("https://google.com");
+          window.location.replace("https://google.com");
         });
 
-        buttonClose?.addEventListener("click", () => {
-          window.location.assign("https://facebook.com");
+        buttonClose.addEventListener("click", () => {
+          window.location.replace("https://facebook.com");
         });
       } catch (error) {
         alert("erro: " + error.message);
@@ -52,10 +48,5 @@ let checkInterval = setInterval(() => {
     }
 
     timer();
-  } else {
-    alert("erro");
-    alert(element);
-    alert(buttonClose);
-    alert(buttonPlay);
   }
 }, 500);
