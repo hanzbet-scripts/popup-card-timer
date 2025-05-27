@@ -52,6 +52,7 @@ let checkInterval = setInterval(() => {
 
     timer();
   } else {
+    alert("erro");
     alert(element);
     alert(buttonClose);
     alert(buttonPlay);
