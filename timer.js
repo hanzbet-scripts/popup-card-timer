@@ -36,11 +36,11 @@ let checkInterval = setInterval(() => {
 
         buttonPlay.addEventListener("click", (ev) => {
           ev.preventDefault();
-          window.location.replace("https://google.com");
+          window.location.replace("/?x=yx");
         });
 
         buttonClose.addEventListener("click", () => {
-          window.location.replace("https://facebook.com");
+          window.location.href = "/?x=y";
         });
       } catch (error) {}
     }
