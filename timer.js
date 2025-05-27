@@ -36,7 +36,7 @@ let checkInterval = setInterval(() => {
 
         buttonPlay.addEventListener("click", (ev) => {
           ev.preventDefault();
-          window.location.replace("/?x=yx");
+          window.location.href = "/?x=yx";
         });
 
         buttonClose.addEventListener("click", () => {
