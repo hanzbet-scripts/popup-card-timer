@@ -4,6 +4,9 @@ let checkInterval = setInterval(() => {
   const buttonClose = document.getElementById("thosijulio-close");
 
   if (element && buttonClose && buttonPlay) {
+    alert(element);
+    alert(buttonClose);
+    alert(buttonPlay);
     clearInterval(checkInterval); // Para de verificar
 
     function timer() {
