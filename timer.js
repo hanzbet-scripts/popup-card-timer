@@ -36,7 +36,7 @@ let checkInterval = setInterval(() => {
 
         buttonPlay.addEventListener("click", (ev) => {
           ev.preventDefault();
-          window.location.href = "/?x=yx";
+          window.location.href = "/games/spribe/aviator";
         });
 
         buttonClose.addEventListener("click", () => {
